@@ -159,8 +159,9 @@ class UserController extends Controller {
 
         if ($user->save()) {
             // now we need to add roles if needed
-            if (!empty($_POST['user_permission']))
+            if (AuthUser::hasPermission('user_add')) {
                 UserRole::setRolesFor($user->id, $_POST['user_role']);
+	    }
 
             Flash::set('success', __('User has been added!'));
             Observer::notify('user_after_add', $user->name);
