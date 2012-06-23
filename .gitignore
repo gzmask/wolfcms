@@ -1,0 +1,13 @@
+/config.php
+*~
+*.swp
+/cscope.*
+/.patches/
+/.idea/
+/nbproject/
+CVS
+.DS_Store
+/.settings/
+/.project
+/.buildpath
+/.cache
