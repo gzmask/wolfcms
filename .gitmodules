@@ -1,3 +1,6 @@
 [submodule "wolf/admin/themes/melcher"]
 	path = wolf/admin/themes/melcher
 	url = git@github.com:gzmask/MelcherCMS-admin-theme.git
+[submodule "wolf/plugins/account"]
+	path = wolf/plugins/account
+	url = git@github.com:gzmask/wolfcms-account-plugin.git
