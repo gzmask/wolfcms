@@ -1,4 +1,3 @@
-This is Ray's modification
 == WHAT IT IS ==
 
 The skeleton plugin serves as a basic plugin template.

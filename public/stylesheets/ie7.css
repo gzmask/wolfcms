@@ -1,0 +1,25 @@
+.content-container {padding-top:120px;}
+.navigation { left:0px;}         
+.navigation a {font-size:12px!important;}
+
+body.projects .inner-container {padding-top:-20px;}
+
+
+#button.slideshow a {
+	top: 260px;
+	left: 20px;
+}
+                               
+
+.content-container {
+	width: 972px;
+	top: 0px;
+	margin:0 auto;
+	padding-top: 120px;
+	margin-bottom: 140px;
+	padding-bottom:0px;
+}           
+
+#slidecaption { 
+color: #FFF!important;
+}

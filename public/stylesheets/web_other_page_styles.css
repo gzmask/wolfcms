@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-image:url(../images/bg_other_page_body1.jpg);
+	background-repeat:no-repeat;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:auto;
+}
+.riswebwrapper
+{
+	width:1100px;
+	height:auto;
+	margin:0px auto;
+	padding:0px;
+}
+.riswebheader
+{
+	background-image:url(../images/bg_web_other_page_header.png);
+	background-repeat:no-repeat;
+	width:1100px;
+	height:210px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.riswebcontent
+{
+	background-image:url(../images/bg_web_other_page_content.png);
+	background-repeat:repeat-y;
+	width:1100px;
+	min-height:550px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.riswebwords
+{
+	width:970px;
+	height:auto;
+	float:left;
+	margin-top:0px;
+	margin-left:15px;
+	padding:0px;
+}
+.riswebfooter
+{
+	background-image:url(../images/bg_web_other_page_footer.png);
+	background-repeat:no-repeat;
+	width:1100px;
+	height:110px;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.risweblogo
+{
+	width:1100px;
+	height:75px;
+	float:left;
+	margin-top:35px;
+	margin-left:0px;
+	padding:0px;
+}
+.risweblogo_left
+{
+	background-image:url(../images/logo_left.png);
+	background-repeat:no-repeat;
+	width:205px;
+	height:75px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	padding:0px;
+}
+.risweblogo_right
+{
+	background-image:url(../images/logo_right.png);
+	background-repeat:no-repeat;
+	width:195px;
+	height:75px;
+	float:right;
+	margin-top:0px;
+	margin-right:100px;
+	padding:0px;
+}
+.riswebmain_nav
+{
+	width:1100px;
+	height:40px;
+	margin-top:15px;
+	margin-left:0px;
+	float:left;
+	padding:0px;
+}
+.riswebcontent_title
+{
+	width:970px;
+	height:15px;
+	margin-top:15px;
+	margin-left:15px;
+	float:left;
+	padding:0px;
+}
+.riswebcontent_title p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#c8c8c8;
+	text-decoration:none;
+	text-align:left;
+	margin:0px;
+	padding:0px;
+}
+.riswebfooter_1
+{
+	width:700px;
+	height:100px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	padding:0px;
+}
+.riswebfooter_1 p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:left;
+	margin:0px;
+	padding-top:80px;
+	padding-left:0px;
+}
+.riswebfooter_1 a
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:left;
+	margin:0px;
+	padding:0px;
+}
+.riswebfooter_2
+{
+	width:290px;
+	height:100px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	padding:0px;
+}
+.riswebfooter_2 p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:right;
+	margin:0px;
+	padding-top:80px;
+	padding-right:0px;
+}
+.riswebfooter_2 a
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	color:#ffffff;
+	text-decoration:none;
+	text-align:left;
+	margin:0px;
+	padding:0px;
+}
+.riswebfooter_3
+{
+	width:80px;
+	height:100px;
+	float:left;
+	margin-top:0px;
+	margin-left:0px;
+	padding:0px;
+}
