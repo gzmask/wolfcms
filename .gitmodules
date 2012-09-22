@@ -4,3 +4,9 @@
 [submodule "wolf/plugins/account"]
 	path = wolf/plugins/account
 	url = git@github.com:gzmask/wolfcms-account-plugin.git
+[submodule "wolf/plugins/gallery"]
+	path = wolf/plugins/gallery
+	url = git@github.com:gzmask/gallery-plugin.git
+[submodule "wolf/plugins/secure_upload"]
+	path = wolf/plugins/secure_upload
+	url = git@github.com:gzmask/secured-upload-plugin.git
