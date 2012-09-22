@@ -32,37 +32,16 @@ if (!defined('IN_CMS')) { exit(); }
  * @license http://www.gnu.org/licenses/gpl.html GPLv3 license
  */
 
-/**
- * Use this SkeletonController and this skeleton plugin as the basis for your
- * new plugins if you want.
- */
-class SkeletonController extends PluginController {
+Plugin::setInfos(array(
+    'id'          => 'secure_upload',
+    'title'       => __('SecureUpload'),
+    'description' => __('Secure upload files'),
+    'version'     => '1.1.0',
+//   	'license'     => 'GPL',
+//	'author'      => 'Martijn van der Kleijn',
+//    'website'     => 'http://www.wolfcms.org/',
+//    'update_url'  => 'http://www.wolfcms.org/plugin-versions.xml',
+    'require_wolf_version' => '0.5.5'
+));
 
-    public function __construct() {
-        $this->setLayout('backend');
-        $this->assignToLayout('sidebar', new View('../../plugins/skeleton/views/sidebar'));
-    }
-
-    public function index() {
-        $this->documentation();
-    }
-
-    public function documentation() {
-        $this->display('skeleton/views/documentation');
-    }
-
-    function settings() {
-        /** You can do this...
-        $tmp = Plugin::getAllSettings('skeleton');
-        $settings = array('my_setting1' => $tmp['setting1'],
-                          'setting2' => $tmp['setting2'],
-                          'a_setting3' => $tmp['setting3']
-                         );
-        $this->display('comment/views/settings', $settings);
-         *
-         * Or even this...
-         */
-
-        $this->display('skeleton/views/settings', Plugin::getAllSettings('skeleton'));
-    }
-}
+Plugin::addController('secure_upload', __('SecureUpload'));

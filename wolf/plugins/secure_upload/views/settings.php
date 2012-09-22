@@ -31,38 +31,27 @@ if (!defined('IN_CMS')) { exit(); }
  * @copyright Martijn van der Kleijn, 2008
  * @license http://www.gnu.org/licenses/gpl.html GPLv3 license
  */
+?>
+<h1><?php echo __('Settings'); ?></h1>
+<p>
+<?php echo __('Display settings page here!'); ?>
+</p>
 
-/**
- * Use this SkeletonController and this skeleton plugin as the basis for your
- * new plugins if you want.
- */
-class SkeletonController extends PluginController {
-
-    public function __construct() {
-        $this->setLayout('backend');
-        $this->assignToLayout('sidebar', new View('../../plugins/skeleton/views/sidebar'));
+<script type="text/javascript">
+// <![CDATA[
+    function setConfirmUnload(on, msg) {
+        window.onbeforeunload = (on) ? unloadMessage : null;
+        return true;
     }
 
-    public function index() {
-        $this->documentation();
+    function unloadMessage() {
+        return '<?php echo __('You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.'); ?>';
     }
 
-    public function documentation() {
-        $this->display('skeleton/views/documentation');
-    }
-
-    function settings() {
-        /** You can do this...
-        $tmp = Plugin::getAllSettings('skeleton');
-        $settings = array('my_setting1' => $tmp['setting1'],
-                          'setting2' => $tmp['setting2'],
-                          'a_setting3' => $tmp['setting3']
-                         );
-        $this->display('comment/views/settings', $settings);
-         *
-         * Or even this...
-         */
-
-        $this->display('skeleton/views/settings', Plugin::getAllSettings('skeleton'));
-    }
-}
+    $(document).ready(function() {
+        // Prevent accidentally navigating away
+        $(':input').bind('change', function() { setConfirmUnload(true); });
+        $('form').submit(function() { setConfirmUnload(false); return true; });
+    });
+// ]]>
+</script>

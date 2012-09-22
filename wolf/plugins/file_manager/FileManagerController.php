@@ -252,7 +252,7 @@ class FileManagerController extends PluginController {
         $data = $_POST['upload'];
         $path = str_replace('..', '', $data['path']);
         $overwrite = isset($data['overwrite']) ? true : false;
-
+        
         // Clean filenames
         $filename = preg_replace('/ /', '_', $_FILES['upload_file']['name']);
         $filename = preg_replace('/[^a-z0-9_\-\.]/i', '', $filename);

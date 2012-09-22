@@ -28,20 +28,12 @@ if (!defined('IN_CMS')) { exit(); }
  * @subpackage skeleton
  *
  * @author Martijn van der Kleijn <martijn.niji@gmail.com>
- * @copyright Martijn van der Kleijn, 2008
+ * @copyright Martijn van der Kleijn, 2009
  * @license http://www.gnu.org/licenses/gpl.html GPLv3 license
  */
 
-Plugin::setInfos(array(
-    'id'          => 'skeleton',
-    'title'       => __('Skeleton'),
-    'description' => __('Provides a basic plugin implementation. (try enabling it!)'),
-    'version'     => '1.1.0',
-   	'license'     => 'GPL',
-	'author'      => 'Martijn van der Kleijn',
-    'website'     => 'http://www.wolfcms.org/',
-    'update_url'  => 'http://www.wolfcms.org/plugin-versions.xml',
-    'require_wolf_version' => '0.5.5'
-));
+/*
+ * Any code below gets executed when the plugin is uninstalled.
+ */
 
-Plugin::addController('skeleton', __('Skeleton'), 'admin_view', false);
+exit();
