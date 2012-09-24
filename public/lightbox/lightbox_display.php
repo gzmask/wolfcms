@@ -1,6 +1,6 @@
 <?php
 function lightbox_display(){
-	  require_once('/var/www/melchercms/config.php');
+	  require_once(CMS_ROOT . DS . 'config.php');
 
           $db = mysql_connect('localhost', DB_USER, DB_PASS);
           if($db) {
