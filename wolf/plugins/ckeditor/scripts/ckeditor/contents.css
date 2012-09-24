@@ -1,0 +1,5 @@
+/* IE7: reset rtl list margin. (#7334) */
+ol,ul,dl { *margin-right:0px; padding:0 40px; }
+
+/* Customize below this line */
+body { font: 13px/1.5 Arial, Verdana, sans-serif; color: #242424; background-color: #fefefe }
