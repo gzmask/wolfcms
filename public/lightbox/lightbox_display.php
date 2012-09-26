@@ -1,18 +1,28 @@
 <?php
-function lightbox_display($dir_to_search){
-	$image_dir = $dir_to_search;
-	$dir_to_search = scandir($dir_to_search);
-	$image_exts = array('gif', 'jpg', 'jpeg', 'png');
-	$excluded_filename = '_t';
-	foreach ($dir_to_search as $image_file){
-	        $dot = strrpos($image_file, '.');
-		$filename = substr($image_file, 0, $dot);
-		$filetype = substr($image_file, $dot+1);
-		$thumbnail_file = strrpos($filename, $excluded_filename);
-		if ((!$thumbnail_file) and array_search($filetype, $image_exts) !== false){
-                         echo "<a href='".$image_dir.$image_file."' rel='lightbox[image]' title='$filename'>
-                                  <img src='".$image_dir.$filename.'.'.$filetype."' alt='".$filename."' width='180' height='140' /></a>";
-		}
-	}
+function lightbox_display(){;
+          require_once(CMS_ROOT . DS . 'config.php');
+
+          $db = mysql_connect('localhost', DB_USER, DB_PASS);
+          if($db) {
+            mysql_select_db('gallery', $db);
+            $select_sql = 'select * from image_order where 1';
+            $result = mysql_query($select_sql) or Flash::setNow('error', __('Cannot select from database'));
+            $num_rows = mysql_num_rows($result);
+
+            for($curr = 1; $curr <= $num_rows; $curr++) {
+              $select_sql = 'select * from image_order where order_number = ' . $curr;
+              $result = mysql_query($select_sql) or Flash::setNow('error', __('Cannot select from database'));
+              $image = mysql_result($result, 0, 'image_name');
+              $thumbnail = mysql_result($result, 0, 'thumbnail_name');
+              $order = mysql_result($result, 0, 'order_number');
+              $image_path = URL_PUBLIC . 'public/gallery/' . $image;
+              $thumbnail_path = URL_PUBLIC . 'public/gallery/thumbnails/' . $thumbnail;
+            
+              echo "<a href='$image_path' rel='lightbox[image]' title='$image'><img src='$thumbnail_path' />";
+            }
+          }
+          mysql_close($db);
+
 }
 ?>
+
