@@ -1,0 +1,47 @@
+/**
+main
+*/
+#djg_poll input, 
+#djg_poll textarea,
+#djg_poll select {border: 1px solid #AAA; outline: none; padding: 1px;}
+
+#djg_poll input:focus, 
+#djg_poll textarea:focus,
+#djg_poll select:focus {background: #ffffcc;}
+
+#djg_poll input:hover, 
+#djg_poll textarea:hover,
+#djg_poll select:hover {background: #ffffdd;}
+
+/**
+table
+*/
+#part_revisions_tabcontents {}
+#parts_list_page_container {overflow-y: scroll; height: 150px;}
+#djg_poll_list {width: 100%;}
+#djg_poll_list td { background: none; cursor: default; padding: 5px 0;}
+#djg_poll_list thead { background-color: #414551; color: #fff;}
+#djg_poll_list tr.odd { background-color: #eee; }
+#djg_poll_list tr.even { background-color: #ddd; }
+#djg_poll_list tr.deleted { color: #888; }
+#djg_poll_list tbody tr .dateabsolute {display: none;}
+#djg_poll_list tbody tr:hover {background-color: #bec5cc;}
+#djg_poll_list tbody tr:hover .daterelative {display: none;}
+#djg_poll_list tbody tr:hover .dateabsolute {display: block;}
+#djg_poll_list tbody tr .actions_wrapper {visibility: hidden;}
+#djg_poll_list tbody tr:hover .actions_wrapper {visibility: visible;}
+#djg_poll_list td {padding: 5px 10px;}
+#djg_poll_list td.actions{ text-align: right; width: 120px; }
+#djg_poll_list td.size { text-align: right; width: 60px; }
+#djg_poll_list td.name,
+#djg_poll_list td.updated_by { width: 120px; }
+#djg_poll_list td.date { width: 160px; text-align: center; }
+#part-revision-preview-dialog,
+#part-revision-diff-dialog {width: 90%;}
+#part-revision-preview-dialog content,
+#part-revision-diff-dialog content {width: 100%; position: relative;}
+#part-revision-preview-code,
+#part-revision-preview-diff {font-family:monospace; width: 100%; height: 400px; overflow-y: scroll; border: 1px solid #ccc;}
+
+del.deletion {color: red; background: #fcc; border: 1px solid #a66; text-decoration: none;}
+ins.insertion {color: green; font-weight: bold; background: #cfc; border: 1px solid #6a6; text-decoration: none;}

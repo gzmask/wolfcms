@@ -38,7 +38,6 @@ function lightbox_display(){;
             }
           }
           mysql_close($db);
-
 }
 ?>
 
