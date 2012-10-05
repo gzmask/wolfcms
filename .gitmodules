@@ -10,3 +10,6 @@
 [submodule "wolf/plugins/secure_upload"]
 	path = wolf/plugins/secure_upload
 	url = git@github.com:gzmask/secured-upload-plugin.git
+[submodule "wolf/plugins/banner"]
+	path = wolf/plugins/banner
+	url = git@github.com:chaop/bannerrotator-plugin.git
