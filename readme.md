@@ -1,5 +1,8 @@
 # WOLF CMS - INFORMATION
 
+##install
+First create config.php empty file
+
 ## About Wolf CMS
 
 Wolf CMS simplifies content management by offering an elegant user interface,
